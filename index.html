@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <form id="form-color-picker" class="form-color-picker">
+        <input type="color" class="color-picker" id="color-picker" value="#ff0000">
+        <select name="mode-selector" id="mode-selector">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button id="btn-color">Get Color Scheme</button>
+      </form>
+      <main class="color-generator">
+        <div id="color-strip1" class="color"></div>
+        <div id="color-strip2" class="color"></div>
+        <div id="color-strip3" class="color"></div>
+        <div id="color-strip4" class="color"></div>
+        <div id="color-strip5" class="color"></div>
+        <div id="color-strip6" class="color"></div>       
+      </main>
+      <section>
+        <p id="color-text1" class="color-text">#F55A5A</p>
+        <p id="color-text2" class="color-text">#2B283A</p>
+        <p id="color-text3" class="color-text">#FBF3AB</p>
+        <p id="color-text4" class="color-text">#AAD1B6</p>
+        <p id="color-text5" class="color-text">#A626D3</p>
+        <p id="color-text6" class="color-text">#A626D3</p>
+        </section>
+     
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
